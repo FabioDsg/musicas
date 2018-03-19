@@ -1,0 +1,23 @@
+-- música: tema 06
+
+d1 $ every 3 (# speed 2) $ slowcat [
+  sound "[bd*2 ~ ~ ~, hh*8, hh:8*8, ~ ~ odx:1 ~ ~ ~ ~ odx:1]",
+  sound "[bd*2 ~ ~ ~, hh*8, hh:8*8, ~ ~ odx:1 ~ odx:1 ~ ~ odx:1]",
+  sound "[bd*2 ~ ~ bd, hh*8, hh:8*8, ~ ~ odx:1 ~ odx:1 ~ ~ odx:1]",
+  sound "[bd ~ ~ ~ ~, hh*8, hh:8*8, ~ ~ odx:1 ~ ~ ~ ~ odx:1]",
+  sound "[bd ~ ~ ~ ~, hh*8, hh:8*8, ~ ~ ~ ~ ~ ~ ~ odx:1]" # shape 0.5,
+  sound "[bd ~ ~ ~ ~, hh*4, hh:8*2 ~ ~ ~ ~ ~ ~, ~ ~ ~ ~ ~ ~ ~ odx:1]" # shape "[0.6 0.2]",
+  sound "[bd*8, hh*2, hh:8*2 ~ ~ ~ ~ ~ ~, ~ odx:1 ~ odx:1 ~ ~ odx:1 ~]" # shape "[0.6 0.4]"
+]
+
+d2 $ every 3 (# gain 0.6) $ stack [
+  sound "[[arpy*32] ~ ~ ~, [arpy*32] ~ ~ ~, [arpy*32] ~ ~ ~]" # n (run 32) # gain 0 # speed "[1.5 2 2.5]" # pan (sine),
+  sound "[~ bass2:3*4]" # gain 0 # shape "[0.8 0.6 0.4 0.2]" # speed 2
+]
+
+d3 $ slowcat [
+  sound "[sn:2*8 cp]/2",
+  sound "[sn:2*8 [cp*4]/2]"
+] # speed "[0.6 0.4 0.2]" # gain 0.7
+
+d4 $ sound "[808bd*4, ~ ~ ~ alphabet alphabet]" # n (run 12) # gain 0.9 # speed 1 # vowel "[u]" # pan (sine)

@@ -1,0 +1,9 @@
+-- música: tema 01
+
+cps (100/60/4) -- tempo = 60 bpm
+
+d1 $ n "<[c c c c] [f f c c] [g f c g]>" # s "superpiano"
+
+d1 $ n "<[c c c c, [c, e, g] ~ [c, e, g] ~] [f f [c, e, g] c] [g f c g]>" # s "superpiano"
+
+d2 $ sound "[[odx:1 ~ odx:1], [~ bass0/2 bass0/2 ~], [~ ~ bass2/3 ~], hh]*2"

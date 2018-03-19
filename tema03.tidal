@@ -1,0 +1,13 @@
+-- música: tema 03
+
+d1 $ slowcat [
+   n "[c e g [g e], ~ e4 g4 ~ ]" # s "supersaw",
+   n "[c e g [g e], ~ e4 g4 ~ ]" # s "supersaw",
+   n "[f a c [c a], ~ a3 c3 ~ ]" # s "supersaw"
+]
+
+d2 $ slowcat [
+   sound "[808bd:5 [cp]]"   # sustain "[4 1]" # gain "[8 1]"  # shape 0.5 # speed 0.4,
+   sound "[808bd:4 [cp*4]]" # sustain "[4 1]" # gain "[10 1]" # shape 0.8 # speed 0.5,
+   sound "[808bd:3 [cp]]"   # sustain "[4 1]" # gain "[8 1]"  # shape 0.5 # speed 0.4
+] # gain 0.9

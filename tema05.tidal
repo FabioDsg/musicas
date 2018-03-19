@@ -1,0 +1,11 @@
+-- música: tema 05
+
+cps (180/60/4)
+
+cps 1
+
+d3 $ n "<[c] [c] [c] [c] [d] [d] [d] [d]>" # sound "supersaw" # sustain "[4 3.5 3 2 4 3.5 3 2]" 
+
+d3 $ n "<[c,g] [c,g] [c,g] [c,g] [d,a] [d,a] [d,a] [d,a]>" # sound "supersaw" # sustain "[2.5 2.5 2 1 2.5 2.5 2 1]"
+
+d3 $ n "<[c,g,ef] [c,g,ef] [c,g,ef] [c,g,ef] [d,a,f] [d,a,f] [d,a,f] [d,a,f]>" # sound "supersaw" # sustain "[2.5 2.5 2 1 2.5 2.5 2 1]"

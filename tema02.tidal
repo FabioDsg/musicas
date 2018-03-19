@@ -1,0 +1,10 @@
+-- música: tema 02
+
+d1 $ slowcat [
+   n "[c, e, g]" # sound "superpwm",
+   n "[c, e, g]" # sound "superpwm",
+   n "[f, a, c]" # sound "superpwm",
+   n "[f, a, c]" # sound "superpwm"
+]
+
+d2 $ sound "odx:1*18"
